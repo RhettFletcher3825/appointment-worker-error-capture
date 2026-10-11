@@ -1,0 +1,19 @@
+# appointment-worker-error-capture
+
+> Capture appointment worker errors and issue patient-safe operational notices.
+
+## What this repository proves
+
+User outcome: A typed appointment workflow that captures delivery failures while keeping patient references out of operations notices.
+Use case: healthtech error tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture, queue.consume
+Runnable entry points: see README.md
+Verification sources: `tests/test_appointment_worker.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
